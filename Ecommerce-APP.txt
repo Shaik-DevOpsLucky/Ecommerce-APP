@@ -381,7 +381,7 @@ From the Nexus browser, copy the 'maven-snapshots' link and paste in the above c
 Save the pom.xml file in the GitHub repo.
 
 Lets configure Nexus in the Jenkins;
-Manage Jenkins --- System Configuration --- Managed Files --- Add a new config  --- Type: Global Maven Settings.xml, Scroll down to ID: maven-setting --- Next --- Scroll down to 'server' tag --- Just above 'another sample' you will see -->, remove that and paste it above the 'server' tag. You can see everything changed to green --- Under 'server' tag, you will see 'deployment repo', remove this and type 'maven-releases' (dont keep single quotes), change the username as 'admin', change the password as 'kastro'.
+Manage Jenkins --- System Configuration --- Managed Files --- Add a new config  --- Type: Global Maven Settings.xml, Scroll down to ID: maven-setting --- Next --- Scroll down to 'server' tag --- Just above 'another sample' you will see -->, remove that and paste it above the 'server' tag. You can see everything changed to green --- Under 'server' tag, you will see 'deployment repo', remove this and type 'maven-releases' (dont keep single quotes), change the username as 'admin', change the password as 'moula'.
 Copy the entire edited content and paste below it. Now lets do the same for maven-snapshots;
 in the place of 'maven-releases' provide 'maven-snapshots'. No need to change the username and password --- Submit
 
